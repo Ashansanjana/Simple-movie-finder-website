@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Info Finder</h1>
+    <div class="search-box">
+      <input type="text" id="movieTag" placeholder="Enter movie title..." />
+      <button onclick="search()">Search</button>
+    </div>
+
+    <div class="movie-card" id="movieCard">
+      <img id="poster" src="" alt="Movie Poster" />
+      <div class="movie-info">
+        <h2 id="title">Movie Title</h2>
+        <p><strong>Genre:</strong> <span id="tagLine"></span></p>
+        <p><strong>Plot:</strong> <span id="plot"></span></p>
+        <p><strong>Director:</strong> <span id="director"></span></p>
+        <p><strong>Actors:</strong> <span id="actors"></span></p>
+        <p><strong>Year:</strong> <span id="year"></span></p>
+        <p><strong>Runtime:</strong> <span id="runtime"></span></p>
+        <p><strong>IMDb Rating:</strong> <span id="rating"></span></p>
+      </div>
+    </div>
+
+    <p class="error" id="errorMsg"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
